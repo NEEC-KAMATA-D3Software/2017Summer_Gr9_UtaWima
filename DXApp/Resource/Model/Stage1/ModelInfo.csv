@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,アルベド,ノーマル,ハイマップ,スペキュラー,メタルネス,ラフネス
+Stage1,6,Stage1_Color,Stage1_Normal,Stage1_Height,Stage1_Specular,Stage1_Metalness,Stage1_Roughness
+Stage1,,,,,,,
+1,4,0,,,,,
+skin,,,,,,,

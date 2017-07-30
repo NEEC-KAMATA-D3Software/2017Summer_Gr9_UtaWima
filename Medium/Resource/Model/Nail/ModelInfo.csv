@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,アルベド,ノーマル,ハイマップ,スペキュラー,メタルネス,ラフネス
+Nail,6,Nail_Color,Nail_Normal,Nail_Height,Nail_Specular,Nail_Metalness,Nail_Roughness
+Nail_Move,Nail_Normal,Nail_Attack,,,,,
+1,16,1,,,,,
+skin,,,,,,,

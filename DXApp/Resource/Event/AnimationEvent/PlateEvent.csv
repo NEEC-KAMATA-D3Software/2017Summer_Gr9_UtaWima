@@ -1,0 +1,5 @@
+アニメーションの名前,イベントの名前,発生F,生存F
+Plate_Attack1,Attack,25,2
+Plate_Attack1,Pay,29,2
+Plate_Slide,OnCollision,29,0
+Plate_Slide,OffCollision,4,0

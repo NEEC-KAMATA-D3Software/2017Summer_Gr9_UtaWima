@@ -1,0 +1,7 @@
+モーション名,ループするかどうか,スピード
+Plate_Idle,1,1
+Plate_Move,1,1
+Plate_Attack1,0,2
+Plate_Damage,0,1
+Plate_Step,0,1
+Plate_Slide,0,1

@@ -1,0 +1,5 @@
+"ステータス名前	",モーション名
+Idle,Nut_Idle
+Move,Nut_Move
+Attack,Nut_Attack
+Step,Nut_Step

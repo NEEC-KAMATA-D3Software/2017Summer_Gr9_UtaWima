@@ -1,0 +1,7 @@
+ステータスの名前,モーション名
+Idle,Plate_Idle
+Move,Plate_Move
+Attack,Plate_Attack1
+Damage,Plate_Damage
+Step,Plate_Step
+Slide,Plate_Slide

@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,アルベド,ノーマル,ハイマップ,スペキュラー,メタルネス,ラフネス
+Arm,6,Arm_Color,Arm_Normal,Arm_Height,Arm_Specular,Arm_Metalness,Arm_Roughness
+Arm_Action,,,,,,,
+1,6,0,,,,,
+rigid,,,,,,,

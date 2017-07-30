@@ -1,0 +1,4 @@
+モーション名,ループするかどうか,スピード
+Nut_Idle,1,1
+Nut_Move,1,1
+Nut_Attack,0,1

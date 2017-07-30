@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,テクスチャ1,テクスチャ2,テクスチャ3,,,
+Sky,6,Sky_Color,Sky_Normal,Sky_Height,Sky_Specular,Sky_Metalness,Sky_Roughness
+,,,,,,,
+1,2,1,,,,,
+rigid,,,,,,,

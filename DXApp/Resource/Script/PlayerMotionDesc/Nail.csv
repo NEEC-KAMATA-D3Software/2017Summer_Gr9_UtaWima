@@ -1,0 +1,7 @@
+ステータスの名前,モーション名
+Idle,Nail_Normal
+Move,Nail_Move
+Attack,Nail_Attack
+Damage,Nail_Damage
+Step,Nail_Step
+Slide,Nail_Slide

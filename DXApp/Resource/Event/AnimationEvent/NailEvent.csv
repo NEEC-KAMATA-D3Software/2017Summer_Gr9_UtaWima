@@ -1,0 +1,5 @@
+アニメーションの名前,イベントの名前,発生F,生存F
+Nail_Attack,Attack,25,2
+Nail_Attack,Pay,29,2
+Nail_Slide,OnCollision,29,0
+Nail_Slide,OffCollision,4,0

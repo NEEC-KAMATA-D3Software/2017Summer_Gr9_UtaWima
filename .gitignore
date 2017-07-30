@@ -1,0 +1,14 @@
+.vs/
+*.suo
+obj/
+bin/
+Debug/
+Release/
+ipch/
+Bat/
+*.bat
+*.db
+*.sdf
+*.pdb
+*.iobj
+*.pch

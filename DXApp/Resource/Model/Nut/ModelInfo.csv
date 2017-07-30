@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,アルベド,ノーマル,ハイマップ,スペキュラー,メタルネス,ラフネス
+Nut,6,Nut_Color,Nut_Normal,Nut_Height,Nut_Specular,Nut_Metalness,Nut_Roughness
+Nut_Idle,Nut_Move,Nut_Attack,,,,,
+1,16,0,,,,,
+skin,,,,,,,

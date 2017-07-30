@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,テクスチャ1,テクスチャ2,,,,
+Pig,6,Pig_Color,Pig_Normal,Pig_Height,Pig_Specular,Pig_Metalness,Pig_Roughness
+Pig_Walk,,,,,,,
+1,16,1,,,,,
+rigid,,,,,,,

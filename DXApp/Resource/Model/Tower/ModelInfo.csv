@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,アルベド,ノーマル,ハイマップ,スペキュラー,メタルネス,ラフネス
+Tower,6,Tower_Color,Tower_Normal,Tower_Height,Tower_Specular,Tower_Metalness,Tower_Roughness
+Tower,,,,,,,
+1,4,0,,,,,
+skin,,,,,,,

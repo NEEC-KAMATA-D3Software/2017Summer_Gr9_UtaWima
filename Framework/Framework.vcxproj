@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Medium|Win32">
+      <Configuration>Medium</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Medium|x64">
+      <Configuration>Medium</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6CE35D6-A200-4F44-B5C7-851F1EE840E2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Framework</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Medium|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Medium|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Medium|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Medium|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)Framework\Include\DirectXInclude;$(ProjectDir);$(ProjectDir)Include\FBXSDK;$(SolutionDir)DXApp;$(ProjectDir)Include\AntTweakBar;$(ProjectDir)Include\OGG;$(ProjectDir)Include\VORBIS;$(ProjectDir)Include\EFFEKSEER;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Framework\Lib\DirectXLib;$(ProjectDir)Lib\Debug;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)DXApp/Lib/Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)Framework\Include\DirectXInclude;$(ProjectDir);$(ProjectDir)Include\FBXSDK;$(SolutionDir)DXApp;$(ProjectDir)Include\AntTweakBar;$(ProjectDir)Include\OGG;$(ProjectDir)Include\VORBIS;$(ProjectDir)Include\EFFEKSEER;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Framework\Lib\DirectXLib;$(ProjectDir)Lib/Release;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)DXApp/Lib/Release</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Medium|Win32'">
+    <IncludePath>$(SolutionDir)Framework\Include\DirectXInclude;$(ProjectDir);$(ProjectDir)Include\FBXSDK;$(SolutionDir)DXApp;$(ProjectDir)Include\AntTweakBar;$(ProjectDir)Include\OGG;$(ProjectDir)Include\VORBIS;$(ProjectDir)Include\EFFEKSEER;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Framework\Lib\DirectXLib;$(ProjectDir)Lib/Release;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)DXApp/Lib/Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_XM_NO_INTRINSICS_;_MDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeaderFile>Framework.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Lib />
+    <Lib>
+      <AdditionalDependencies>d2d1.lib;d3d9.lib;d3d10.lib;d3d10_1.lib;d3d11.lib;d3dcompiler.lib;D3DCSX.lib;D3DCSXd.lib;d3dx9.lib;d3dx9d.lib;d3dx10.lib;d3dx10d.lib;d3dx11.lib;d3dx11d.lib;d3dxof.lib;dinput8.lib;dsetup.lib;dsound.lib;dwrite.lib;dxgi.lib;dxguid.lib;X3DAudio.lib;xapobase.lib;xapobased.lib;XAPOFX.lib;XInput.lib;Effekseer.lib;EffekseerRendererDX11.lib;EffekseerSoundDSound.lib;EffekseerSoundXAudio2.lib;comsuppw.lib;libogg_static.lib;libvorbis_static.lib;libvorbisfile_static.lib;libfbxsdk.lib;AntTweakBar.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_XM_NO_INTRINSICS_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <PrecompiledHeaderFile>Framework.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+    <Lib>
+      <AdditionalDependencies>d2d1.lib;d3d9.lib;d3d10.lib;d3d10_1.lib;d3d11.lib;d3dcompiler.lib;D3DCSX.lib;D3DCSXd.lib;d3dx9.lib;d3dx9d.lib;d3dx10.lib;d3dx10d.lib;d3dx11.lib;d3dx11d.lib;d3dxof.lib;dinput8.lib;dsetup.lib;dsound.lib;dwrite.lib;dxgi.lib;dxguid.lib;X3DAudio.lib;xapobase.lib;xapobased.lib;XAPOFX.lib;XInput.lib;Effekseer.lib;EffekseerRendererDX11.lib;EffekseerSoundDSound.lib;EffekseerSoundXAudio2.lib;comsuppw.lib;libogg_static.lib;libvorbis_static.lib;libvorbisfile_static.lib;libfbxsdk-mt.lib;AntTweakBar.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Medium|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_XM_NO_INTRINSICS_;_MDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ForcedIncludeFiles>Framework.h</ForcedIncludeFiles>
+      <PrecompiledHeaderFile>Framework.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib />
+    <Lib>
+      <AdditionalDependencies>d2d1.lib;d3d9.lib;d3d10.lib;d3d10_1.lib;d3d11.lib;d3dcompiler.lib;D3DCSX.lib;D3DCSXd.lib;d3dx9.lib;d3dx9d.lib;d3dx10.lib;d3dx10d.lib;d3dx11.lib;d3dx11d.lib;d3dxof.lib;dinput8.lib;dsetup.lib;dsound.lib;dwrite.lib;dxgi.lib;dxguid.lib;X3DAudio.lib;xapobase.lib;xapobased.lib;XAPOFX.lib;XInput.lib;Effekseer.lib;EffekseerRendererDX11.lib;EffekseerSoundDSound.lib;EffekseerSoundXAudio2.lib;AntTweakBar.lib;comsuppw.lib;libogg_static.lib;libvorbis_static.lib;libvorbisfile_static.lib;AntTweakBar.lib;libfbxsdk-mt.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Medium|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Application\Scene\Scene.h" />
+    <ClInclude Include="Source\Application\Scene\SceneThread.h" />
+    <ClInclude Include="Source\Application\Screen\Screen.h" />
+    <ClInclude Include="Source\Component\Animation\AnimatorComponent.h" />
+    <ClInclude Include="Framework.h" />
+    <ClInclude Include="Source\Component\BoxRenderClientComponent.h" />
+    <ClInclude Include="Source\Component\BoxRenderOwnerComponent.h" />
+    <ClInclude Include="Source\Component\CameraComponent.h" />
+    <ClInclude Include="Source\Component\CameraContoroller.h" />
+    <ClInclude Include="Source\Component\ComponentBuilder.h" />
+    <ClInclude Include="Source\Component\ComponentInclude.h" />
+    <ClInclude Include="Source\Component\CubeMapCreateComponent.h" />
+    <ClInclude Include="Source\Component\Effect\BloomEffect.h" />
+    <ClInclude Include="Source\Component\Effect\BlurEffect.h" />
+    <ClInclude Include="Source\Component\Effect\DirectionalLightComponent.h" />
+    <ClInclude Include="Source\Component\Effect\PointLightComponent.h" />
+    <ClInclude Include="Source\Component\Effect\PostEffectComponent.h" />
+    <ClInclude Include="Source\Component\FadeComponent.h" />
+    <ClInclude Include="Source\Component\Physics\BoxCollider.h" />
+    <ClInclude Include="Source\Component\Physics\CircleCollider.h" />
+    <ClInclude Include="Source\Component\Physics\PhysicsComponent.h" />
+    <ClInclude Include="Source\Component\Physics\RigidBody.h" />
+    <ClInclude Include="Source\Component\SceneChangeComponent.h" />
+    <ClInclude Include="Source\Device\Camera\Camera.h" />
+    <ClInclude Include="Source\Device\Input\Operation\ICommand.h" />
+    <ClInclude Include="Source\Device\Input\GamePad.h" />
+    <ClInclude Include="Source\Device\Input\Input.h" />
+    <ClInclude Include="Source\Device\Input\Operation\InputHundler.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\2D\Single\DeferredLightRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\2D\Single\ISpriteRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\2D\Single\PostEffectRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Instance\CubeInstanceRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Instance\CubeMapInstanceRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Instance\SkinningInstanceRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Single\CubeRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Instance\IInstanceRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Single\IRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\RenderDefine.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\Effekseer\EffectManager.h" />
+    <ClInclude Include="Source\Device\Render\Shader\DeferredLighting.h" />
+    <ClInclude Include="Source\Component\Render2DComponent.h" />
+    <ClInclude Include="Source\Component\Render3DComponent.h" />
+    <ClInclude Include="Source\Component\RenderClientComponent.h" />
+    <ClInclude Include="Source\Component\RenderOwnerComponent.h" />
+    <ClInclude Include="Source\Component\SpriteRenderComponent.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Instance\RigidInstanceRenderer.h" />
+    <ClInclude Include="Source\Application\Application.h" />
+    <ClInclude Include="Source\Application\WindowFactory\Window.h" />
+    <ClInclude Include="Source\Application\WindowFactory\WindowFactory.h" />
+    <ClInclude Include="Source\Component\Component.h" />
+    <ClInclude Include="Source\Component\UpdateComponent.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\2D\Single\SpriteRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Renderer\3D\Single\RigidRenderer.h" />
+    <ClInclude Include="Source\Device\Render\Shader\GeometoryMaterial.h" />
+    <ClInclude Include="Source\Device\Render\Shader\GradationFilter.h" />
+    <ClInclude Include="Source\Device\Render\Shader\IMaterial.h" />
+    <ClInclude Include="Source\Device\Render\Shader\PostEffectPass.h" />
+    <ClInclude Include="Source\Device\Render\Shader\ShaderData.h" />
+    <ClInclude Include="Source\Device\Render\Shader\StandardMaterial.h" />
+    <ClInclude Include="Source\Device\Render\Shader\TessellationMaterial.h" />
+    <ClInclude Include="Source\Device\Sound\SoundPlayer.h" />
+    <ClInclude Include="Source\Entity\ComponentStateManager.h" />
+    <ClInclude Include="Source\Resource\Effect\Effect.h" />
+    <ClInclude Include="Source\Resource\Motion\Motion.h" />
+    <ClInclude Include="Source\Resource\Sound\SoundResource.h" />
+    <ClInclude Include="Source\Resource\Texture\BoneTexture.h" />
+    <ClInclude Include="Source\Resource\Texture\CubeDepthTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\CubeReanderTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\CubeTexture.h" />
+    <ClInclude Include="Source\Resource\Texture\CubeTextureArray.h" />
+    <ClInclude Include="Source\Resource\Texture\DepthTarget.h" />
+    <ClInclude Include="Source\Device\Render\DirectXInstance.h" />
+    <ClInclude Include="Source\Resource\Texture\IMultiRenderTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\ITarget.h" />
+    <ClInclude Include="Source\Resource\Texture\MSAADepthTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\MSAAMultiRenderTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\MSAARenderTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\MultiRenderTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\RenderTarget.h" />
+    <ClInclude Include="Source\Resource\Texture\Texture2D.h" />
+    <ClInclude Include="Source\Resource\Model\Model.h" />
+    <ClInclude Include="Source\Resource\ResourceManager.h" />
+    <ClInclude Include="Source\Entity\Entity.h" />
+    <ClInclude Include="Source\State\State.h" />
+    <ClInclude Include="Source\Task\PhysicsContainer.h" />
+    <ClInclude Include="Source\Task\Render2DContainer.h" />
+    <ClInclude Include="Source\Task\Render3DContainer.h" />
+    <ClInclude Include="Source\Task\TaskContainer.h" />
+    <ClInclude Include="Source\Task\TaskManager.h" />
+    <ClInclude Include="Source\Task\UpdateContainer.h" />
+    <ClInclude Include="Source\Util\AntTweak\AntWeak.h" />
+    <ClInclude Include="Source\Util\AntTweak\ColorPalette.h" />
+    <ClInclude Include="Source\Util\CSharp\SharpAPI.h" />
+    <ClInclude Include="Source\Util\CSharp\SharpClass.h" />
+    <ClInclude Include="Source\Util\CSharp\SharpInstance.h" />
+    <ClInclude Include="Source\Util\CSharp\SharpMethod.h" />
+    <ClInclude Include="Source\Util\CSharp\SharpSignature.h" />
+    <ClInclude Include="Source\Util\Event\WindowEvent.h" />
+    <ClInclude Include="Source\Util\IO\ByteLoader.h" />
+    <ClInclude Include="Source\Util\IO\CSVLoader.h" />
+    <ClInclude Include="Source\Util\IO\ModelInfoLoader.h" />
+    <ClInclude Include="Source\Util\IO\OggLoader.h" />
+    <ClInclude Include="Source\Util\IO\TextLoader.h" />
+    <ClInclude Include="Source\Util\IO\FbxLoader.h" />
+    <ClInclude Include="Source\Util\Math\Math.h" />
+    <ClInclude Include="Source\Util\Math\Transform.h" />
+    <ClInclude Include="Source\Util\Math\Vector.h" />
+    <ClInclude Include="Source\Util\Render\RenderTargetStack.h" />
+    <ClInclude Include="Source\Util\Render\DXFunc.h" />
+    <ClInclude Include="Source\Util\Selector.h" />
+    <ClInclude Include="Source\Util\Template\Event.h" />
+    <ClInclude Include="Source\Util\Template\Template.h" />
+    <ClInclude Include="Source\Util\Thread\CriticalSection.h" />
+    <ClInclude Include="Source\Util\Thread\IRunnable.h" />
+    <ClInclude Include="Source\Util\Thread\Thread.h" />
+    <ClInclude Include="Source\Util\Timer\FPSTimer.h" />
+    <ClInclude Include="Source\Util\Timer\ProcessTimer.h" />
+    <ClInclude Include="Source\Util\Timer\Timer.h" />
+    <ClInclude Include="Source\Util\Type.h" />
+    <ClInclude Include="Source\Util\Win\WinFunc.h" />
+    <ClInclude Include="Source\Util\WrapFunc.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Application\Application.cpp" />
+    <ClCompile Include="Source\Application\Scene\Scene.cpp" />
+    <ClCompile Include="Source\Application\Scene\SceneThread.cpp" />
+    <ClCompile Include="Source\Application\Screen\Screen.cpp" />
+    <ClCompile Include="Source\Application\WindowFactory\Window.cpp" />
+    <ClCompile Include="Source\Application\WindowFactory\WindowFactory.cpp" />
+    <ClCompile Include="Source\Component\Animation\AnimatorComponent.cpp" />
+    <ClCompile Include="Framework.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Medium|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Medium|Win32'">
+      </ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="Source\Component\BoxRenderClientComponent.cpp" />
+    <ClCompile Include="Source\Component\BoxRenderOwnerComponent.cpp" />
+    <ClCompile Include="Source\Component\CameraComponent.cpp" />
+    <ClCompile Include="Source\Component\CameraContoroller.cpp" />
+    <ClCompile Include="Source\Component\Component.cpp" />
+    <ClCompile Include="Source\Component\ComponentBuilder.cpp" />
+    <ClCompile Include="Source\Component\CubeMapCreateComponent.cpp" />
+    <ClCompile Include="Source\Component\Effect\BloomEffect.cpp" />
+    <ClCompile Include="Source\Component\Effect\BlurEffect.cpp" />
+    <ClCompile Include="Source\Component\Effect\DirectionalLightComponent.cpp" />
+    <ClCompile Include="Source\Component\Effect\PointLightComponent.cpp" />
+    <ClCompile Include="Source\Component\FadeComponent.cpp" />
+    <ClCompile Include="Source\Component\Physics\BoxCollider.cpp" />
+    <ClCompile Include="Source\Component\Physics\CircleCollider.cpp" />
+    <ClCompile Include="Source\Component\Physics\PhysicsComponent.cpp" />
+    <ClCompile Include="Source\Component\Physics\RigidBody.cpp" />
+    <ClCompile Include="Source\Component\SceneChangeComponent.cpp" />
+    <ClCompile Include="Source\Device\Camera\Camera.cpp" />
+    <ClCompile Include="Source\Device\Input\GamePad.cpp" />
+    <ClCompile Include="Source\Device\Input\Input.cpp" />
+    <ClCompile Include="Source\Device\Input\Operation\InputHundler.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\2D\Single\DeferredLightRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\3D\Instance\CubeInstanceRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\3D\Instance\CubeMapInstanceRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\3D\Instance\IInstanceRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\3D\Instance\SkinningInstanceRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\3D\Single\CubeRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\Effekseer\EffectManager.cpp" />
+    <ClCompile Include="Source\Device\Render\Shader\DeferredLighting.cpp" />
+    <ClCompile Include="Source\Component\Render2DComponent.cpp" />
+    <ClCompile Include="Source\Component\Render3DComponent.cpp" />
+    <ClCompile Include="Source\Component\RenderClientComponent.cpp" />
+    <ClCompile Include="Source\Component\RenderOwnerComponent.cpp" />
+    <ClCompile Include="Source\Component\SpriteRenderComponent.cpp" />
+    <ClCompile Include="Source\Component\UpdateComponent.cpp" />
+    <ClCompile Include="Source\Device\Render\DirectXInstance.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\2D\Single\SpriteRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\3D\Single\RigidRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Renderer\3D\Instance\RigidInstanceRenderer.cpp" />
+    <ClCompile Include="Source\Device\Render\Shader\GeometoryMaterial.cpp" />
+    <ClCompile Include="Source\Device\Render\Shader\GradationFilter.cpp" />
+    <ClCompile Include="Source\Device\Render\Shader\IMaterial.cpp" />
+    <ClCompile Include="Source\Device\Render\Shader\PostEffectPass.cpp" />
+    <ClCompile Include="Source\Device\Render\Shader\StandardMaterial.cpp" />
+    <ClCompile Include="Source\Device\Render\Shader\TessellationMaterial.cpp" />
+    <ClCompile Include="Source\Device\Sound\SoundPlayer.cpp" />
+    <ClCompile Include="Source\Entity\ComponentStateManager.cpp" />
+    <ClCompile Include="Source\Resource\Effect\Effect.cpp" />
+    <ClCompile Include="Source\Resource\Motion\Motion.cpp" />
+    <ClCompile Include="Source\Resource\Sound\SoundResource.cpp" />
+    <ClCompile Include="Source\Resource\Texture\BoneTexture.cpp" />
+    <ClCompile Include="Source\Resource\Texture\CubeDepthTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\CubeReanderTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\CubeTexture.cpp" />
+    <ClCompile Include="Source\Resource\Texture\CubeTextureArray.cpp" />
+    <ClCompile Include="Source\Resource\Texture\DepthTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\MSAADepthTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\MSAAMultiRenderTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\MSAARenderTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\MultiRenderTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\RenderTarget.cpp" />
+    <ClCompile Include="Source\Resource\Texture\Texture2D.cpp" />
+    <ClCompile Include="Source\Resource\ResourceManager.cpp" />
+    <ClCompile Include="Source\Entity\Entity.cpp" />
+    <ClCompile Include="Source\Task\PhysicsContainer.cpp" />
+    <ClCompile Include="Source\Task\Render2DContainer.cpp" />
+    <ClCompile Include="Source\Task\Render3DContainer.cpp" />
+    <ClCompile Include="Source\Task\TaskManager.cpp" />
+    <ClCompile Include="Source\Task\UpdateContainer.cpp" />
+    <ClCompile Include="Source\Util\AntTweak\AntWeak.cpp" />
+    <ClCompile Include="Source\Util\AntTweak\ColorPalette.cpp" />
+    <ClCompile Include="Source\Util\CSharp\SharpAPI.cpp" />
+    <ClCompile Include="Source\Util\CSharp\SharpClass.cpp" />
+    <ClCompile Include="Source\Util\CSharp\SharpInstance.cpp" />
+    <ClCompile Include="Source\Util\CSharp\SharpMethod.cpp" />
+    <ClCompile Include="Source\Util\CSharp\SharpSignature.cpp" />
+    <ClCompile Include="Source\Util\Event\WindowEvent.cpp" />
+    <ClCompile Include="Source\Util\IO\CSVLoader.cpp" />
+    <ClCompile Include="Source\Util\IO\ModelInfoLoader.cpp" />
+    <ClCompile Include="Source\Util\IO\OggLoader.cpp" />
+    <ClCompile Include="Source\Util\IO\TextLoader.cpp" />
+    <ClCompile Include="Source\Util\IO\FbxLoader.cpp" />
+    <ClCompile Include="Source\Util\Math\Math.cpp" />
+    <ClCompile Include="Source\Util\Math\Transform.cpp" />
+    <ClCompile Include="Source\Util\Math\Vector.cpp" />
+    <ClCompile Include="Source\Util\Render\RenderTargetStack.cpp" />
+    <ClCompile Include="Source\Util\Render\DXFunc.cpp" />
+    <ClCompile Include="Source\Util\Selector.cpp" />
+    <ClCompile Include="Source\Util\Thread\Thread.cpp" />
+    <ClCompile Include="Source\Util\Timer\FPSTimer.cpp" />
+    <ClCompile Include="Source\Util\Timer\ProcessTimer.cpp" />
+    <ClCompile Include="Source\Util\Timer\Timer.cpp" />
+    <ClCompile Include="Source\Util\Type.cpp" />
+    <ClCompile Include="Source\Util\WrapFunc.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,7 @@
+モーション名,ループするかどうか,スピード
+Nail_Normal,1,1
+Nail_Move,1,1
+Nail_Attack,0,2
+Nail_Damage,0,1
+Nail_Step,0,1
+Nail_Slide,0,1

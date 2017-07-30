@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,アルベド,ノーマル,ハイマップ,スペキュラー,メタルネス,ラフネス
+Plate,6,Plate_Color,Plate_Normal,Plate_Height,Plate_Specular,Plate_Metalness,Plate_Roughness
+,,,,,,,
+1,16,1,,,,,
+rigid,,,,,,,

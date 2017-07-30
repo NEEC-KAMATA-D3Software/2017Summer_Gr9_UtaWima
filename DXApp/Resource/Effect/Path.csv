@@ -1,0 +1,15 @@
+key,path
+Deth,Resource/Effect/Deth.efk
+Attack,Resource/Effect/test2.efk
+Bone,Resource/Effect/test1.efk
+Hit,Resource/Effect/Hit.efk
+ArrowRed,Resource/Effect/ArrowRed.efk
+ArrowBlue,Resource/Effect/ArrowBlue.efk
+ArrowGreen,Resource/Effect/ArrowGreen.efk
+ArrowPurple,Resource/Effect/ArrowPurple.efk
+Player1,Resource/Effect/Player1.efk
+Player2,Resource/Effect/Player2.efk
+Player3,Resource/Effect/Player3.efk
+Player4,Resource/Effect/Player4.efk
+Recovery,Resource/Effect/Recovery.efk
+Renda,Resource/Effect/Renda.efk

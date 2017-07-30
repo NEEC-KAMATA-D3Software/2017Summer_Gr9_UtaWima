@@ -1,0 +1,5 @@
+モデルの名前,テクスチャの枚数,テクスチャ1,テクスチャ2,,,,
+Sphere,6,Sphere_Color,Sphere_Normal,Sphere_Height,Sphere_Specular,Sphere_Metalness,Sphere_Roughness
+,,,,,,,
+1,12,1,,,,,
+rigid,,,,,,,
